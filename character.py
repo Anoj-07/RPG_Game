@@ -14,7 +14,7 @@ class Character(ABC):
         print(f"{self._name} took {damage}.Health now: {self._health}")
 
     def get_status(self):
-        return f"{self._name} | HP : {self._health}"
+        print(f"{self._name} | HP : {self._health}")
     
     @abstractmethod
     def attack(self, target):
